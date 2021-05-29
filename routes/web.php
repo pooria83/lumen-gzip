@@ -13,9 +13,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return 'ok';
-});
+// $router->get('/', function () use ($router) {
+//     return 'ok';
+// });
 
 $router->get('/courses' , 'CourseController@index');
 $router->get('/comp-courses' , [ 'middleware' => 'gzip' , 'uses' => 'CourseController@index']);
